@@ -1,0 +1,4 @@
+// Selection Sort:
+// find the smallest number and push it into a new Array
+//use number.MAX_VALUE for base?
+//loop through the array

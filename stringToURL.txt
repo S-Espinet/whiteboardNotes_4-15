@@ -11,3 +11,19 @@ function stringToURL(myString) {
 
 // with recursion
   //use indexOf and replace the space with %20 at that space's index
+
+function replace(myString) {
+  if (typeof myString != "string") {
+    return "input is not a string";
+  }
+  let myArray = myString.split("")
+  let index = myArray.indexOf(" ")
+  myArray[index] = "%20"
+  if (myArray.includes(" ")){
+      return replace(myArray.join(""))
+  } else {
+      return myArray.join("")
+  }
+};
+
+// needs to be refactored to put cases in correct order; base case, termination case, then recursion

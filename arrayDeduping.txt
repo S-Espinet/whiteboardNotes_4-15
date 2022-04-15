@@ -1,8 +1,8 @@
 //use a Set constructor, which has functionality to remove duplicates
 
 function dedupe (myArray) {
-  let mySet = new Set(myArray);
-  let result = Array.from(mySet);
+  const mySet = new Set(myArray);
+  const result = Array.from(mySet);
   return result;
 }
 
@@ -10,8 +10,10 @@ function dedupe (myArray) {
 //using indexOf and filter methods
 
 function removeDuplicates(myArray) {
-  let uniqueArray = myArray.filter((element, index) => {
+  const uniqueArray = myArray.filter((element, index) => {
     return myArray.indexOf(element) === index;
   });
   return uniqueArray;
 }
+
+Riley's whiteboarding
