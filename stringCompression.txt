@@ -1,0 +1,31 @@
+// set a variable to hold the compressed string, which starts out empty
+// turn the string into array to make it iterable
+// loop through the array
+// set a counter to start at 1 (always going to be at least 1 letter)
+// set a variable to hold the array at its indices
+// use a while loop to hold your conditions = the index can't be longer than the length of the array, and the current index has to match the following index
+  // while both of these things are true, you'll iterate the counter and the index
+// if the counter is equal to 1, you add the variable that holding the index to the compressed string
+// else you add the count + that variable
+// then you return the compressed string
+
+function compressString(myString) {
+  let compressionString = "";
+  let myStringArray = myString.split("");
+  console.log(myStringArray);
+  for (let i = 0; i < myStringArray.length; i++) {
+    let index = myStringArray[i];
+    let counter = 1;
+    while (i < myStringArray.length -1 && myStringArray[i] === myStringArray[i + 1]) {
+      counter ++;
+      i ++
+    }
+    if (counter === 1) {
+      compressionString += index;
+    }
+    else {
+      compressionString += counter + index; 
+    }
+  }
+  return compressionString;
+};
