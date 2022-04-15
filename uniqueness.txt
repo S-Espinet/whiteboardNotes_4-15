@@ -6,4 +6,4 @@ function uniqueness(myString) {
 
 
   Zachary's whiteboarding
-  - see peer evaluation for notes
+  - see peer evaluation

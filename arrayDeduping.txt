@@ -17,4 +17,4 @@ function removeDuplicates(myArray) {
 }
 
 Riley's whiteboarding 
-- handwritten notes
+- see peer evaluation
