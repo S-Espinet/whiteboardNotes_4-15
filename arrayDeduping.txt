@@ -1,0 +1,7 @@
+//use a Set constructor, which has functionality to remove duplicates
+
+function dedupe (myArray) {
+  let mySet = new Set(myArray);
+  let result = Array.from(mySet);
+  return result;
+}

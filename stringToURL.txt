@@ -1,2 +1,9 @@
 //loop through string (or array)
 //when an index equals a blank string, set it equal to string %20
+
+function stringToURL(myString) {
+  const resultString = myString.split(" ").join("%20");
+  return resultString;
+};
+
+//split your string at " " (spaces), and then join the string back together with a %20 (as a string) in between each piece of the string
