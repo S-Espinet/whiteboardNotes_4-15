@@ -10,3 +10,4 @@ function stringToURL(myString) {
 
 
 // with recursion
+  //use indexOf and replace the space with %20 at that space's index
