@@ -16,4 +16,5 @@ function removeDuplicates(myArray) {
   return uniqueArray;
 }
 
-Riley's whiteboarding
+Riley's whiteboarding 
+- handwritten notes

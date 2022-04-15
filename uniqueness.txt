@@ -3,3 +3,6 @@
 function uniqueness(myString) {
   let isRepeat = !(/([a-zA-Z0-9]).*?\1/).test(myString);
   return isRepeat;
+
+
+  Zachary's whiteboarding
