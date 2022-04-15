@@ -1,0 +1,2 @@
+//loop through string (or array)
+//when an index equals a blank string, set it equal to string %20
