@@ -5,3 +5,13 @@ function dedupe (myArray) {
   let result = Array.from(mySet);
   return result;
 }
+
+
+//using indexOf and filter methods
+
+function removeDuplicates(myArray) {
+  let uniqueArray = myArray.filter((element, index) => {
+    return myArray.indexOf(element) === index;
+  });
+  return uniqueArray;
+}
