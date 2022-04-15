@@ -7,3 +7,6 @@ function stringToURL(myString) {
 };
 
 //split your string at " " (spaces), and then join the string back together with a %20 (as a string) in between each piece of the string
+
+
+// with recursion
