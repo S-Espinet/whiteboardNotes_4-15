@@ -1,0 +1,26 @@
+//receive input 
+	//example "Jasmine Ann Jones"
+// walk through the string, as an array, and replace spaces with %20 as a string 
+// split your string at " " (spaces), and then join the string back together with a %20 (as a string) in between each piece of the string
+
+function stringToURL(myString) {
+	const resultString = myString.split(" ").join("%20");
+	return resultString;
+};
+
+
+// Does case order matter? Termination case, base case, recursion, or can it be in a different order?
+
+function replace(myString) {
+	if (typeof myString != "string") {
+	return "input is not a string";
+	}  
+	let myArray = myString.split("");
+	let index = myArray.indexOf(" ");
+	myArray[index] = "%20";
+	if (myArray.includes(" ")) {
+	return replace(myArray.join(""))
+	} else {
+	return myArray.join("");
+	}
+};
